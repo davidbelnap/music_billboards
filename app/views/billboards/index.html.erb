@@ -1,0 +1,9 @@
+<h1>Billboards</h1>
+<h2>Hot 100</h2>
+<ul>
+	<% @billboards.each do |billboard| %>
+		<li>
+			<%= link_to billboard.name, billboard %>
+		</li>
+	<% end %>
+</ul>
